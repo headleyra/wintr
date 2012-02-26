@@ -2,6 +2,10 @@
 
 A number to word converter.
 
+## Install
+
+    gem install wintr
+
 ## Usage
 
     Wintr::Number.new(0).to_w
