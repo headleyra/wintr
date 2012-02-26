@@ -14,7 +14,7 @@ Gem::Specification.new do |s|
 
   s.files            = Dir['lib/**/*.rb']
   s.test_files       = Dir['spec/**/*.rb']
-  # s.extra_rdoc_files = ['README.md']
+  s.extra_rdoc_files = ['README.md']
   s.require_paths    = ['lib']
 
   s.add_development_dependency 'rspec', '~> 2.8'
