@@ -19,4 +19,4 @@ A number to word converter.
 
 ## Licence
 
-Released under the MIT License. See the [LICENCE.md](https://github.com/headleyra/wintr/blob/master/LICENCE.md) for further details.
+Released under the MIT License. See the [LICENCE.md](https://github.com/headleyra/wintr/blob/master/LICENCE.md) file for further details.
