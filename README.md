@@ -1,6 +1,6 @@
 # Wintr
 
-A number to word converter.
+A number to word converter.  Integers up to a maximum of 999 duotrigintillion (American) can be handled!  See Russ Rowlett's discussion on [Names for Large Numbers](http://www.unc.edu/~rowlett/units/large.html)
 
 ## Install
 
@@ -20,3 +20,5 @@ A number to word converter.
 ## Licence
 
 Released under the MIT License. See the [LICENCE.md](https://github.com/headleyra/wintr/blob/master/LICENCE.md) file for further details.
+
+

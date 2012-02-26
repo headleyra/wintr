@@ -16,9 +16,6 @@ module Wintr
       it "should convert rubbish input into empty string" do
         PowerOfThousand.new('foo').to_w.should == ''
       end
-      it "should convert integers over 2 into empty string" do
-        PowerOfThousand.new(3).to_w.should == ''
-      end
     end
   end
 
