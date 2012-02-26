@@ -11,6 +11,7 @@ Gem::Specification.new do |s|
   s.homepage         = 'http://github.com/headleyra/wintr'
   s.summary          = 'A number to word converter'
   s.description      = 'A number to word converter'
+  s.license          = 'MIT'
 
   s.files            = Dir['lib/**/*.rb']
   s.test_files       = Dir['spec/**/*.rb']
