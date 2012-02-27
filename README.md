@@ -1,6 +1,8 @@
 # Wintr
 
-A number to word converter.  Integers up to a maximum of 999 duotrigintillion (American) can be handled!  See Russ Rowlett's discussion on [Names for Large Numbers](http://www.unc.edu/~rowlett/units/large.html)
+A number to word converter.
+
+Integers up to a maximum of 999 duotrigintillion (American) can be handled!  See Russ Rowlett's discussion on [Names for Large Numbers](http://www.unc.edu/~rowlett/units/large.html)
 
 ## Install
 
