@@ -24,3 +24,4 @@ Integers up to a maximum of 999 duotrigintillion (American) can be handled!  See
 Released under the MIT License. See the [LICENCE.md](https://github.com/headleyra/wintr/blob/master/LICENCE.md) file for further details.
 
 
+
