@@ -1,4 +1,5 @@
 # Wintr
+[![Gem Version](https://badge.fury.io/rb/wintr.png)](http://badge.fury.io/rb/wintr)
 
 A number to word converter.
 
