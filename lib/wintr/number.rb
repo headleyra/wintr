@@ -7,7 +7,7 @@ module Wintr
       @number = number
     end
 
-    def to_w
+    def to_s
       return 'zero' if @number == 0
 
       word_array = []

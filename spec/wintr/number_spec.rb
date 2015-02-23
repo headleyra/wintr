@@ -63,10 +63,10 @@ CONVERSIONS = {
 }
 
 describe Wintr::Number do
-  describe "#to_w" do
+  describe "#to_s" do
     CONVERSIONS.each do |integer, word|
       it "converts #{integer}" do
-        Wintr::Number.new(integer).to_w.should == word
+        Wintr::Number.new(integer).to_s.should == word
       end
     end
   end
