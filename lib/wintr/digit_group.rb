@@ -13,7 +13,7 @@ module Wintr
       when 1
         OneDigitGroup.new(@digits[0]).to_s
       when 2
-        TwoDigitGroup.new(@digits[0], @digits[1]).to_w
+        TwoDigitGroup.new(@digits[0], @digits[1]).to_s
       when 3
         ThreeDigitGroup.new(@digits[0], @digits[1], @digits[2]).to_s
       end

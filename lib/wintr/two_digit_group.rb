@@ -27,7 +27,7 @@ module Wintr
       @tens, @units = tens, units
     end
 
-    def to_w
+    def to_s
       word_array = []
 
       if @tens == '1'

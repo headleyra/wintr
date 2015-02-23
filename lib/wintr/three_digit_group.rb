@@ -12,7 +12,7 @@ module Wintr
         word_array << OneDigitGroup.new(@hundreds).to_s
         word_array << 'hundred' if @hundreds != '0'
         word_array << 'and' unless @tens == '0' && @units == '0'
-        word_array << TwoDigitGroup.new(@tens, @units).to_w
+        word_array << TwoDigitGroup.new(@tens, @units).to_s
         WordArray.new(word_array).to_w
       end
     end
