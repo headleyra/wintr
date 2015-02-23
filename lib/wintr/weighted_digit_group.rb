@@ -8,7 +8,7 @@ module Wintr
       @digit_group, @power_of_thousand = digit_group, power_of_thousand
     end
 
-    def to_w
+    def to_s
       base_digit_group_in_words = DigitGroup.new(@digit_group).to_s
       power_of_thousand_in_words = PowerOfThousand.new(@power_of_thousand).to_s if base_digit_group_in_words != ''
       WordArray.new([base_digit_group_in_words, power_of_thousand_in_words]).to_w

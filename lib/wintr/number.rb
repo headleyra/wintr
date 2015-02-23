@@ -16,7 +16,7 @@ module Wintr
 
       until digit_array == [] do
         digit_group = digit_array.pop(3)
-        word_array.unshift(WeightedDigitGroup.new(digit_group, power_of_thousand).to_w)
+        word_array.unshift(WeightedDigitGroup.new(digit_group, power_of_thousand).to_s)
         power_of_thousand += 1
       end
       WordArray.new(word_array).to_w
