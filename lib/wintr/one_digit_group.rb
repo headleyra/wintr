@@ -12,12 +12,12 @@ module Wintr
       '8' => 'eight',
       '9' => 'nine'
     }
-  
+
     def initialize(units)
       @units = units
     end
-  
-    def to_w
+
+    def to_s
       UNITS[@units]
     end
   end

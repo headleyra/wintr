@@ -9,7 +9,7 @@ module Wintr
       if @hundreds == '0' && @tens == '0' && @units == '0'
         ''
       else
-        word_array << OneDigitGroup.new(@hundreds).to_w
+        word_array << OneDigitGroup.new(@hundreds).to_s
         word_array << 'hundred' if @hundreds != '0'
         word_array << 'and' unless @tens == '0' && @units == '0'
         word_array << TwoDigitGroup.new(@tens, @units).to_w

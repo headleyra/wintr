@@ -11,7 +11,7 @@ module Wintr
     def to_s
       case @digits.size
       when 1
-        OneDigitGroup.new(@digits[0]).to_w
+        OneDigitGroup.new(@digits[0]).to_s
       when 2
         TwoDigitGroup.new(@digits[0], @digits[1]).to_w
       when 3
