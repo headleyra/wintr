@@ -40,7 +40,7 @@ module Wintr
       @power = power
     end
 
-    def to_w
+    def to_s
       POWER[@power] || ''
     end
   end

@@ -10,7 +10,7 @@ module Wintr
 
     def to_w
       base_digit_group_in_words = DigitGroup.new(@digit_group).to_s
-      power_of_thousand_in_words = PowerOfThousand.new(@power_of_thousand).to_w if base_digit_group_in_words != ''
+      power_of_thousand_in_words = PowerOfThousand.new(@power_of_thousand).to_s if base_digit_group_in_words != ''
       WordArray.new([base_digit_group_in_words, power_of_thousand_in_words]).to_w
     end
   end
