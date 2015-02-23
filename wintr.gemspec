@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.authors          = ['R Headley']
   s.email            = ['headleyra@yahoo.com']
   s.homepage         = 'http://github.com/headleyra/wintr'
-  s.summary          = 'A Ruby number to word converter'
-  s.description      = 'A Ruby number to word converter (handles integers up to a maximum of 999 duotrigintillion!)'
+  s.summary          = 'A Ruby integer to word converter'
+  s.description      = 'Convert integers into their word equivalents'
   s.license          = 'MIT'
 
   s.files            = Dir['lib/**/*.rb']
