@@ -8,7 +8,7 @@ module Wintr
       @digits = digits
     end
 
-    def to_w
+    def to_s
       case @digits.size
       when 1
         OneDigitGroup.new(@digits[0]).to_w
