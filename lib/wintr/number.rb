@@ -19,7 +19,7 @@ module Wintr
         word_array.unshift(WeightedDigitGroup.new(digit_group, power_of_thousand).to_s)
         power_of_thousand += 1
       end
-      WordArray.new(word_array).to_w
+      WordArray.new(word_array).to_s
     end
   end
 end

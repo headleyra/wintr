@@ -37,7 +37,7 @@ module Wintr
       else
         word_array << TENS[@tens]
         word_array << OneDigitGroup.new(@units).to_s
-        WordArray.new(word_array).to_w
+        WordArray.new(word_array).to_s
       end
     end
   end

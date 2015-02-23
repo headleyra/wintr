@@ -4,7 +4,7 @@ module Wintr
       @array = array
     end
 
-    def to_w
+    def to_s
       @array.join(' ').squeeze(' ').strip
     end
   end

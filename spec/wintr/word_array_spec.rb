@@ -1,12 +1,9 @@
 require 'spec_helper'
 
-module Wintr
-  describe WordArray do
-    describe "#to_w" do
-      it "should join it's array then strip and squeeze spaces" do
-        WordArray.new([' foo     ', '    bar  ']).to_w.should == 'foo bar'
-      end
+describe Wintr::WordArray do
+  describe "#to_s" do
+    it "joins it's array then squeezes spaces" do
+      Wintr::WordArray.new([' foo     ', '    bar  ']).to_s.should == 'foo bar'
     end
   end
 end
-
