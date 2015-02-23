@@ -4,7 +4,7 @@ module Wintr
       @hundreds, @tens, @units = hundreds, tens, units
     end
 
-    def to_w
+    def to_s
       word_array = []
       if @hundreds == '0' && @tens == '0' && @units == '0'
         ''
