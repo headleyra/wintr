@@ -2,16 +2,18 @@ require 'spec_helper'
 
 def conversions
   {
+    0 => 'zero',
     1 => 'one',
-    27 => 'twenty seven',
-    115 => 'one hundred and fifteen',
-    3_700 => 'three thousand seven hundred',
-    56_945_781 => 'fifty six million nine hundred and forty five thousand seven hundred and eighty one',
-    126_000_010 => 'one hundred and twenty six million and ten',
-    999_999_999 => 'nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine',
-
+    2 => 'two',
+    3 => 'three',
+    4 => 'four',
+    5 => 'five',
+    6 => 'six',
+    7 => 'seven',
+    8 => 'eight',
     9 => 'nine',
     10 => 'ten',
+
     11 => 'eleven',
     12 => 'twelve',
     13 => 'thirteen',
@@ -21,14 +23,44 @@ def conversions
     17 => 'seventeen',
     18 => 'eighteen',
     19 => 'nineteen',
+
     20 => 'twenty',
     21 => 'twenty one',
+    30 => 'thirty',
+    32 => 'thirty two',
+    40 => 'forty',
+    43 => 'forty three',
+    50 => 'fifty',
+    54 => 'fifty four',
+    60 => 'sixty',
+    65 => 'sixty five',
+    70 => 'seventy',
+    76 => 'seventy six',
+    80 => 'eighty',
+    87 => 'eighty seven',
+    90 => 'ninety',
+    98 => 'ninety eight',
 
-    99 => 'ninety nine',
     100 => 'one hundred',
     102 => 'one hundred and two',
-    3000 => 'three thousand',
-    3007 => 'three thousand and seven',
+    115 => 'one hundred and fifteen',
+
+    5_000 => 'five thousand',
+    5_001 => 'five thousand and one',
+    5_010 => 'five thousand and ten',
+    5_011 => 'five thousand and eleven',
+    5_100 => 'five thousand one hundred',
+    5_101 => 'five thousand one hundred and one',
+    5_110 => 'five thousand one hundred and ten',
+    5_111 => 'five thousand one hundred and eleven',
+
+    # 17_011_007 => 'seventeen million eleven thousand and seven',
+    # 17_011_075 => 'seventeen million eleven thousand and seven five',
+    # 17_011_705 => 'seventeen million eleven thousand seven hundred and five',
+
+    56_945_781 => 'fifty six million nine hundred and forty five thousand seven hundred and eighty one',
+    126_000_010 => 'one hundred and twenty six million and ten',
+    999_999_999 => 'nine hundred and ninety nine million nine hundred and ninety nine thousand nine hundred and ninety nine',
 
     9 * (10**9) + 9 => 'nine billion and nine',
     12 * (10**12) + 12 => 'twelve trillion and twelve',
@@ -64,11 +96,11 @@ def conversions
   }
 end
 
-describe Wintr::Number do
+RSpec.describe Wintr::Number do
   describe "#to_s" do
     conversions.each do |integer, word|
-      it "converts #{integer}" do
-        Wintr::Number.new(integer).to_s.should == word
+      it "converts #{integer} to #{word}" do
+        expect(Wintr::Number.new(integer).to_s).to eq(word)
       end
     end
   end

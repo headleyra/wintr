@@ -15,11 +15,11 @@ def single_digits
   }
 end
 
-describe Wintr::OneDigitGroup do
-  describe "#to_s" do
+RSpec.describe Wintr::Units do
+  describe '#to_s' do
     single_digits.each do |digit_string, word|
       it "converts #{digit_string} to #{word}" do
-        Wintr::OneDigitGroup.new(digit_string).to_s.should == word
+        expect(Wintr::Units.new(digit_string).to_s).to eq(word)
       end
     end
   end
